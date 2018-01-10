@@ -5,6 +5,7 @@ attr_accessor :title, :author
 
   def initialize(title)
     @title = title
+    Author.increment
   end
 
   def author_name
