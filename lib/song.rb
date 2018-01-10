@@ -11,7 +11,7 @@ attr_accessor :name, :artist
 
   def artist_name(song)
     if song.artist.name != nil
-      self.artist.name
+      song.artist.name
     else
       nil
     end
