@@ -11,7 +11,7 @@ attr_accessor :name, :artist
 
   def artist_name
     if !self.artist.name.is_a?(String)
-      return nil
+      nil
     else
       self.artist.name
     end
