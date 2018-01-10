@@ -10,7 +10,7 @@ attr_accessor :name, :artist
   end
 
   def artist_name
-    if self.artist.name.is_a?(String)
+    if self.artist.includes?(@name)
       self.artist.name
     else
       nil
