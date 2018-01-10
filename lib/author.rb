@@ -21,6 +21,10 @@ attr_accessor :name, :posts
     @posts << new_post
   end
 
+  def self.increment
+    @@post_count += 1
+  end
+
   def self.post_count
     @@post_count
   end
