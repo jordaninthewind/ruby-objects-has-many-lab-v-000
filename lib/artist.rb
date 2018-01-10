@@ -26,6 +26,10 @@ attr_accessor :name, :songs
     # binding.pry
   end
 
+  def increment
+    @@song_count += 1
+  end
+
   def self.song_count
     @@song_count
   end
