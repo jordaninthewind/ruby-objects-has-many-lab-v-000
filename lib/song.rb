@@ -10,11 +10,10 @@ attr_accessor :name, :artist
   end
 
   def artist_name
-    self.artist.name
-    binding.pry
-    #   nil
-    # else
-    #   self.artist.name
-    # end
+    if self.artist.name != nil
+      self.artist.name
+    else
+      nil
+    end
   end
 end
