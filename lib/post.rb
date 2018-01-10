@@ -9,7 +9,7 @@ attr_accessor :title, :author
   end
 
   def author_name
-    self.author.name
+    self.author == nil ? nil : self.author.name      
   end
 
 end
