@@ -14,5 +14,6 @@ attr_accessor :name, :artist
       return nil
     else
       self.artist.name
+    end
   end
 end
