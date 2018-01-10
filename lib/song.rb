@@ -6,7 +6,7 @@ attr_accessor :name, :artist
 
   def initialize(name)
     @name = name
-    # Artist.song_count += 1
+    Artist.increment
   end
 
   def artist_name
