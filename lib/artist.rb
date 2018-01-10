@@ -23,7 +23,6 @@ attr_accessor :name, :songs
     title = Song.new(song)
     title.artist = self
     self.songs << title
-    # binding.pry
   end
 
   def self.increment
