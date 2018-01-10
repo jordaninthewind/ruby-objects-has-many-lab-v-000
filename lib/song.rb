@@ -10,11 +10,11 @@ attr_accessor :name, :artist
   end
 
   def artist_name
-    # if self.artist.includes?(@name)
-      binding.pry
+    # binding.pry
+    if self.artist == nil
+      nil
+    else
       self.artist.name
-    # else
-    #   nil
-    # end
+    end
   end
 end
