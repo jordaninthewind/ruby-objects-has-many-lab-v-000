@@ -9,8 +9,8 @@ attr_accessor :name, :artist
     Artist.increment
   end
 
-  def artist_name
-    if self.artist.name != nil
+  def artist_name(song)
+    if song.artist.name != nil
       self.artist.name
     else
       nil
